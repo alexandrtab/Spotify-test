@@ -1,2 +1,2 @@
 # Spotify clone
-### Layout #HTML + #CSS
+## Layout #HTML + #CSS
