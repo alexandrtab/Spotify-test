@@ -64,6 +64,10 @@ body {
     cursor: pointer;
 }
 
+.burger {
+    display: none;
+}
+
 .nav {
     align-items: center;
     text-align: right;
@@ -405,8 +409,17 @@ form {
 }
 
 @media screen and (max-width:750px) {
-    header ul {
-        flex-direction: column;
+    .header-container {
+        flex-direction: row;
+    }
+    .nav {
+        display: none;
+    }
+    .burger {
+        display: block;
+        color: white;
+        height: 50px;
+        width: 50px
     }
     .title {
         font-size: 50pt;
