@@ -61,6 +61,7 @@ body {
 .logo img {
     width: 150px;
     height: auto;
+    cursor: pointer;
 }
 
 .nav {
@@ -167,12 +168,12 @@ footer li {
     font-weight: 700;
 }
 
-.footer-subtitle:hover {
-    color: #1ed760;
+.footer-subtitle {
+    cursor: pointer;
 }
 
-.footer-icons {
-    height: 15%;
+.footer-subtitle:hover {
+    color: #1ed760;
 }
 
 .icon-bar {
@@ -311,11 +312,14 @@ footer li {
 
 .categories {
     text-align: left;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
     height: 70vh;
-    padding: 0 50px;
+    align-items: center;
     background-color: #eee;
+}
+
+.category-block {
+    height: 270px;
 }
 
 .category-title {
