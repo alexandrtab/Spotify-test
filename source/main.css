@@ -44,24 +44,46 @@ body {
 }
 
 .header {
-    background-color: black;
-    height: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
     width: 100%;
     padding: 20px;
+
+    /* height: 20%;
+    width: 100%;
+    padding: 20px; */
 }
 
+.header:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.header-body {
+    position: relative;
+   
+}
 .header-container {
-    width: 90%;
+    max-width: 90%;
     padding: 0 15px;
     justify-content: space-between;
     box-sizing: border-box;
     align-content: center;
 }
-
+.header-burger {
+    display: none;
+}
 .logo img {
     width: 150px;
     height: auto;
     cursor: pointer;
+    z-index: 3;
 }
 
 .burger {
@@ -97,7 +119,9 @@ body {
 .nav-item a:hover {
     color: #1ed760;
 }
-
+main {
+    padding-top: 70px;
+}
 .main-block,
 footer {
     height: 100vh;
@@ -401,15 +425,15 @@ form {
     margin: auto;
 }
 
-@media screen and (max-width:1090px) {
+@media screen and (max-width: 1090px) {
     .header-container,
     footer {
         flex-direction: column;
     }
 }
 
-@media screen and (max-width:750px) {
-    .header-container {
+@media screen and (max-width: 750px) {
+    /* .header-container {
         flex-direction: row;
     }
     .nav {
@@ -420,6 +444,48 @@ form {
         color: white;
         height: 50px;
         width: 50px
+    } */
+    .header-burger {
+        display: block;
+        position:relative;
+        width:50px;
+        height:50px;
+        z-index: 3;
+        color:white;
+    }
+    .logo{
+        z-index: 3;
+    }
+    /* .header-burger::before,.header-burger::after{
+        content:"";
+        background-color: white;
+        position:absolute;
+        width:100%;
+        width:2px;
+        left:0;
+    }
+    .header-burger::before{
+        top:0;
+    }
+    .header-burger::after{
+        bottom:0;
+    }
+    .header-burger span{
+        position:absolute;
+        background-color: white;
+        left:0;
+        width:100%;
+        height:2px;
+        top:10px
+    } */
+    .nav{display:block;
+        font-size:30pt;
+        position:fixed;
+        top: 90px;
+        left:0;
+        width:100%;
+        height:100%;
+        background-color: black;
     }
     .title {
         font-size: 50pt;
