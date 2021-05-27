@@ -17,19 +17,27 @@
 <body>
     <header class="header flex flex-center">
         <div class="header-container flex">
-            <div class="logo">
-                <a href="index.html"><img src="img/Spotify_Logo_RGB_White.png"></div>
-            </a>
+            <div class="header-body flex">
+                <div class="logo">
+                    <a href="index.html"><img src="img/Spotify_Logo_RGB_White.png">
+                </div>
+                </a>
+                <div class="header-burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                </div>
+                <ul class="nav flex">
 
-            <ul class="nav flex">
-                <li class="nav-item"><a href="premium.html"> Premium</a> </li>
-                <li class="nav-item"><a href="spravka.html"> Справка</a> </li>
-                <li class="nav-item"><a href="download.html"> Скачать </a> </li>
-                <li class="nav-item"></li>
-                <li class="nav-item"><a href="#"> Зарегистрироваться</a> </li>
-                <li class="nav-item"><a href="sign-in.html"> Вход в аккаунт</a> </li>
-            </ul>
 
+                    <li class="nav-item"><a href="premium.html"> Premium</a> </li>
+                    <li class="nav-item"><a href="spravka.html"> Справка</a> </li>
+                    <li class="nav-item"><a href="download.html"> Скачать </a> </li>
+                    <li class="nav-item"></li>
+                    <li class="nav-item"><a href="#"> Зарегистрироваться</a> </li>
+                    <li class="nav-item"><a href="sign-in.html"> Вход в аккаунт</a> </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
@@ -108,7 +116,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="main.js"></script>
 </body>
 
 </html>
